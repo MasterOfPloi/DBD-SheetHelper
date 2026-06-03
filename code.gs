@@ -2,8 +2,9 @@ function getImageUrl(name) {
     const base = "https://raw.githubusercontent.com/MasterOfPloi/DBD-SheetHelper/main/images/";
 
     const files = {
-      "Trapper": "Killers/Trapper.webp",
+      "Trapper": "Killers/Trapper.png",
       "Wraith": "Killers/Wraith.png"
+      "Hillbilly": "Killers/Hillbilly.png"
     };
 
     return files[name] ? base + files[name] : null;

@@ -1,8 +1,8 @@
 function getImageUrl(name) {
-    const base = "https://raw.githubusercontent.com/YourName/DBD-SheetHelper/main/images/";
+    const base = "https://raw.githubusercontent.com/MasterOfPloi/DBD-SheetHelper/main/images/";
 
     const files = {
-      "Trapper": "Killers/Trapper.png",
+      "Trapper": "Killers/Trapper.webp",
       "Wraith": "Killers/Wraith.png"
     };
 

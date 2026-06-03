@@ -1,13 +1,21 @@
+function getImageUrl(name) {
+    const base = "https://raw.githubusercontent.com/YourName/DBD-SheetHelper/main/images/";
+
+    const files = {
+      "Trapper": "Killers/Trapper.png",
+      "Wraith": "Killers/Wraith.png"
+    };
+
+    return files[name] ? base + files[name] : null;
+}
+
 function onEdit(e) {
   const cell = e.range;
-  const value = e.value;
+  const character = e.value;
 
-  const images = {
-    "Trapper":
-      "https://your-image-url/trapper.png"
-  };
+  const url = getImageUrl(character);
 
-  if (images[value]) {
-    cell.setFormula(`=IMAGE("${images[value]}")`);
+  if (url) {
+    cell.setFormula(`=IMAGE("${url}")`);
   }
 }

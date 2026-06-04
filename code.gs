@@ -22,7 +22,31 @@ function getImageUrl(name) {
         "Renato", "Gabriel", "Nicolas", "Ellen", "Alan", "Sable", "Aestri",
         "Lara", "Trevor", "Taurie", "Orela", "Rick", "Michonne", "Vee",
         "Dustin", "Eleven", "Tae-Young"
-    ]
+    ];
+
+    const maps = [
+        "Coal Tower", "Groaning Storehouse", "Ironworks of Misery", "Shelter Woods", "Suffocation Pit",
+        "Azarov's Resting Place", "Blood Lodge", "Gas Heaven", "Wreckers Yard", "Wretched Shop",
+        "Fractured Cowshed", "Rancid Abattoir", "Rotten Fields", "Thompson House", "Torment Creek",
+        "Disturbed Ward", "Father Campbell's Chapel",
+        "Lampkin Lane",
+        "The Pale Rose", "Grim Pantry",
+        "Treatment Theatre",
+        "Mother's Dwelling", "Temple of Purgation",
+        "Badham Preschool",
+        "The Game",
+        "Family Residence", "Sanctum of Wrath",
+        "Mount Ormond Resort", "Ormond Lake Mine",
+        "The Underground Complex",
+        "Dead Dawg Saloon",
+        "Midwich Elementary School",
+        "RPD East", "RPD West",
+        "Eyrie of Crows", "Dead Sands",
+        "Garden of Joy", "Greenville Square", "Freddy Fazbear's Pizza", "Fallen Refuge",
+        "The Shattered Square", "Forgotten Ruins",
+        "Toba Landing", "Nostromo Wreckage",
+        "Trickster's Delusion"
+    ];
 
     if(killers.includes(name))
     {
@@ -31,6 +55,10 @@ function getImageUrl(name) {
     else if(survivors.includes(name))
     {
         folder = "Survivors/";
+    }
+    else if(maps.includes(name))
+    {
+        folder = "Maps/"
     }
     else
     {

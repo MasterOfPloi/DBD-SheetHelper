@@ -25,27 +25,27 @@ function getImageUrl(name) {
     ];
 
     const maps = [
-        "Coal Tower", "Groaning Storehouse", "Ironworks of Misery", "Shelter Woods", "Suffocation Pit",
-        "Azarov's Resting Place", "Blood Lodge", "Gas Heaven", "Wreckers Yard", "Wretched Shop",
-        "Fractured Cowshed", "Rancid Abattoir", "Rotten Fields", "Thompson House", "Torment Creek",
-        "Disturbed Ward", "Father Campbell's Chapel",
-        "Lampkin Lane",
-        "The Pale Rose", "Grim Pantry",
-        "Treatment Theatre",
-        "Mother's Dwelling", "Temple of Purgation",
-        "Badham Preschool",
-        "The Game",
-        "Family Residence", "Sanctum of Wrath",
-        "Mount Ormond Resort", "Ormond Lake Mine",
-        "The Underground Complex",
-        "Dead Dawg Saloon",
-        "Midwich Elementary School",
-        "RPD East", "RPD West",
-        "Eyrie of Crows", "Dead Sands",
-        "Garden of Joy", "Greenville Square", "Freddy Fazbear's Pizza", "Fallen Refuge",
-        "The Shattered Square", "Forgotten Ruins",
-        "Toba Landing", "Nostromo Wreckage",
-        "Trickster's Delusion"
+        "CoalTower", "GroaningStorehouse", "IronworksofMisery", "ShelterWoods", "SuffocationPit",
+        "AzarovsRestingPlace", "BloodLodge", "GasHeaven", "WreckersYard", "WretchedShop",
+        "FracturedCowshed", "RancidAbattoir", "RottenFields", "ThompsonHouse", "TormentCreek",
+        "DisturbedWard", "FatherCampbellsChapel",
+        "LampkinLane",
+        "PaleRose", "GrimPantry",
+        "TreatmentTheatre",
+        "MothersDwelling", "TempleofPurgation",
+        "BadhamPreschool",
+        "TheGame",
+        "FamilyResidence", "SanctumofWrath",
+        "MountOrmondResort", "OrmondLakeMine",
+        "UndergroundComplex",
+        "DeadDawgSaloon",
+        "MidwichElementarySchool",
+        "RPDEast", "RPDWest",
+        "EyrieofCrows", "DeadSands",
+        "GardenofJoy", "GreenvilleSquare", "FreddyFazbearsPizza", "FallenRefuge",
+        "ShatteredSquare", "ForgottenRuins",
+        "TobaLanding", "NostromoWreckage",
+        "TrickstersDelusion"
     ];
 
     if(killers.includes(name))

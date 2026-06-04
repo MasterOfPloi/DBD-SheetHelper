@@ -30,3 +30,19 @@ Killers:
 - First
 
 Survivors:
+- Ace
+- Bill*
+- Kate
+- Ash*
+- Zarina
+- Cheryl
+- Felix*
+- Mikaela
+- Yoichi*
+- Rebecca
+- Ellen
+- Orela
+- Rick
+- Michonne
+- Dustin
+- Eleven

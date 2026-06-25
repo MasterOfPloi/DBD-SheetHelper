@@ -21,7 +21,7 @@ function getImageUrl(name) {
         "Jonah", "Yoichi", "Haddie", "Ada", "Rebecca", "Vittorio", "Thalita",
         "Renato", "Gabriel", "Nicolas", "Ellen", "Alan", "Sable", "Aestri",
         "Lara", "Trevor", "Taurie", "Orela", "Rick", "Michonne", "Vee",
-        "Dustin", "Eleven", "Tae-Young"
+        "Dustin", "Eleven", "Tae-Young", "Shane"
     ];
 
     const maps = [

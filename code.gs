@@ -10,7 +10,7 @@ function getImageUrl(name) {
         "Twins", "Trickster", "Nemesis", "Cenobite", "Artist", "Onryo", "Dredge",
         "Mastermind", "Knight", "SkullMerchant", "Singularity", "Xenomorph", "GoodGuy", "Unknown",
         "Lich", "DarkLord", "Houndmaster", "Ghoul", "Animatronic", "Krasue", "First",
-        "Slasher"
+        "Slasher", "Judgment"
     ];
 
     const survivors = [
@@ -21,7 +21,7 @@ function getImageUrl(name) {
         "Jonah", "Yoichi", "Haddie", "Ada", "Rebecca", "Vittorio", "Thalita",
         "Renato", "Gabriel", "Nicolas", "Ellen", "Alan", "Sable", "Aestri",
         "Lara", "Trevor", "Taurie", "Orela", "Rick", "Michonne", "Vee",
-        "Dustin", "Eleven", "Tae-Young", "Shane"
+        "Dustin", "Eleven", "Tae-Young", "Shane", "Aurora"
     ];
 
     const maps = [

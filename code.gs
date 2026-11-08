@@ -10,7 +10,7 @@ function getImageUrl(name) {
         "Twins", "Trickster", "Nemesis", "Cenobite", "Artist", "Onryo", "Dredge",
         "Mastermind", "Knight", "SkullMerchant", "Singularity", "Xenomorph", "GoodGuy", "Unknown",
         "Lich", "DarkLord", "Houndmaster", "Ghoul", "Animatronic", "Krasue", "First",
-        "Slasher", "Judgment"
+        "Slasher", "Judgment", "Terrifier"
     ];
 
     const survivors = [
@@ -21,8 +21,64 @@ function getImageUrl(name) {
         "Jonah", "Yoichi", "Haddie", "Ada", "Rebecca", "Vittorio", "Thalita",
         "Renato", "Gabriel", "Nicolas", "Ellen", "Alan", "Sable", "Aestri",
         "Lara", "Trevor", "Taurie", "Orela", "Rick", "Michonne", "Vee",
-        "Dustin", "Eleven", "Tae-Young", "Shane", "Aurora"
+        "Dustin", "Eleven", "Tae-Young", "Shane", "Aurora", "Sienna"
     ];
+
+    const legendarySkins = {
+    //Alan Wake skins
+    "Rose": "Alan",
+    "Saga": "Alan",
+    
+    //Cheryl Mason skins
+    "Cybil": "Cheryl",
+    "James": "Cheryl",
+    "Lisa": "Cheryl",
+    "Maria": "Cheryl",
+    "Hinako": "Cheryl",
+
+    //Ellen Ripley skins
+    "Rain": "Ellen",
+    "William": "Ellen",
+    
+    //Feng Min skins
+    "2B": "Feng",
+
+    //Jill Valentine skins
+    "Claire": "Jill",
+    "Sheva": "Jill",
+
+    //Leon S. Kennedy skins
+    "Carlos": "Leon",
+    "Chris": "Leon",
+
+    //Michonne Grimes skins
+    "Maggie": "Michonne",
+
+    //Nancy Wheeler skins
+    "Robin": "Nancy",
+
+    //Renato Lyra skins
+    "Tubarao": "Renato",
+
+    //Rick Grimes skins
+    "Daryl": "Rick",
+    "Glenn": "Rick",
+    "Negan": "Rick",
+
+    //Steve Harrington skins
+    "Jonathan": "Steve",
+
+    //Trevor Belmont skins
+    "Alucard": "Trevor",
+    "Richter": "Trevor",
+    "Soma": "Trevor",
+
+    //Vittorio Toscano skins
+    "Geralt": "Vittorio",
+
+    //Yui Kimura skins
+    "A2": "Yui"
+    }
 
     const maps = [
         "CoalTower", "GroaningStorehouse", "IronworksofMisery", "ShelterWoods", "SuffocationPit",
@@ -45,7 +101,8 @@ function getImageUrl(name) {
         "GardenofJoy", "GreenvilleSquare", "FreddyFazbearsPizza", "FallenRefuge",
         "ShatteredSquare", "ForgottenRuins",
         "TobaLanding", "NostromoWreckage",
-        "TrickstersDelusion"
+        "TrickstersDelusion",
+        "HartshorneMall"
     ];
 
     if(killers.includes(name))
@@ -55,6 +112,11 @@ function getImageUrl(name) {
     else if(survivors.includes(name))
     {
         folder = "Survivors/";
+    }
+    else if (legendarySurvivors[name])
+    {
+        folder = "Survivors/";
+        name = legendarySurvivors[name];
     }
     else if(maps.includes(name))
     {

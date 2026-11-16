@@ -13,6 +13,24 @@ function getImageUrl(name) {
         "Slasher", "Judgment", "Terrifier"
     ];
 
+    const killerAliases = {
+      "Myers": "Shape",
+      "Leatherface": "Cannibal",
+      "Freddy": "Nightmare",
+      "Pyramidhead": "Executioner",
+      "Pinhead": "Cenobite",
+      "Sadako": "Onryo",
+      "Wesker": "Mastermind",
+      "Chucky": "GoodGuy",
+      "Vecna": "Lich",
+      "Dracula": "DarkLord",
+      "Kaneki": "Ghoul",
+      "Springtrap": "Animatronic",
+      "Henry": "First",
+      "Jason": "Slasher",
+      "Art": "Terrifier"
+    };
+
     const survivors = [
         "Dwight", "Meg", "Claudette", "Jake", "Nea", "Laurie", "Ace",
         "Bill", "Feng", "David", "Quentin", "Tapp", "Kate", "Adam",
@@ -78,7 +96,7 @@ function getImageUrl(name) {
 
     //Yui Kimura skins
     "A2": "Yui"
-    }
+    };
 
     const maps = [
         "CoalTower", "GroaningStorehouse", "IronworksofMisery", "ShelterWoods", "SuffocationPit",
@@ -96,7 +114,7 @@ function getImageUrl(name) {
         "UndergroundComplex",
         "DeadDawgSaloon",
         "MidwichElementarySchool",
-        "RPDEast", "RPDWest",
+        "RaccoonCityPoliceStationEastWing", "RaccoonCityPoliceStationWestWing",
         "EyrieofCrows", "DeadSands",
         "GardenofJoy", "GreenvilleSquare", "FreddyFazbearsPizza", "FallenRefuge",
         "ShatteredSquare", "ForgottenRuins",
@@ -105,22 +123,54 @@ function getImageUrl(name) {
         "HartshorneMall"
     ];
 
+    const mapAliases = {
+      "CT": "CoalTower",
+      "Ironworks": "IronworksofMisery",
+      "SuffoPit": "SuffocationPit",
+      "Azarovs": "AzarovsRestingPlace",
+      "Cowshed": "FracturedCowshed",
+      "Chapel":"FatherCampbellsChapel",
+      "Haddonfield": "LampkinLane",
+      "Lerys": "TreatmentTheatre",
+      "Temple": "TempleofPurgation",
+      "Badham": "BadhamPreschool",
+      "Sanctum": "SanctumofWrath",
+      "Hawkins": "UndergroundComplex",
+      "DDS": "DeadDawgSaloon",
+      "Midwich": "MidwichElementarySchool",
+      "RPDEast": "RaccoonCityPoliceStationEastWing",
+      "RPDWest": "RaccoonCityPoliceStationWestWing",
+      "Eyrie": "EyrieofCrows",
+      "Greenville": "GreenvilleSquare",
+      "Nostromo": "NostromoWreckage"
+    };
+
     if(killers.includes(name))
     {
         folder = "Killers/";
+    }
+    else if (killerAliases[name])
+    {
+      folder = "Killers/";
+      name = killerAliases[name];
     }
     else if(survivors.includes(name))
     {
         folder = "Survivors/";
     }
-    else if (legendarySurvivors[name])
+    else if (legendarySkins[name])
     {
         folder = "Survivors/";
-        name = legendarySurvivors[name];
+        name = legendarySkins[name];
     }
     else if(maps.includes(name))
     {
-        folder = "Maps/"
+        folder = "Maps/";
+    }
+    else if(mapAliases[name])
+    {
+      folder = "Maps/";
+      name = mapAliases[name];
     }
     else
     {

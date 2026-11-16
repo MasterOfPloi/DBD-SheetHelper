@@ -54,6 +54,9 @@ function getImageUrl(name) {
     "Maria": "Cheryl",
     "Hinako": "Cheryl",
 
+    //Dustin Henderson skins
+    "Eddie": "Dustin",
+
     //Ellen Ripley skins
     "Rain": "Ellen",
     "William": "Ellen",
